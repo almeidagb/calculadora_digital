@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Shippori+Mincho&family=Varela+Round&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapercave.com/wp/wp9181289.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calculadora {
+    background-color: transparent;
+    backdrop-filter: blur(55px);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    color: #da3b62;
+}
+
+.visor {
+    background-color: #e0d4f5;
+    color: #4b0082;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botao , .btgit {
+    background-color: #d67990;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Botões redondos */
+    width: 60px;       /* Largura fixa para manter a forma circular */
+    height: 60px;      /* Altura fixa para manter a forma circular */
+    font-size: 1.2rem;
+   
+}
+ .botao:hover {
+    background-color: #da3b62;
+    transform: scale(1.05);
+}
+
+.botao:active {
+    background-color: #ce0d3d;
+}
+
+a{     
+        font-size: 40px;
+        color: #e0d4f5;
+        align-items: center;
+        text-align: center;
+     }
+
+     .btgit {
+        background-color: #d67990; /* Cor do botão */
+        color: white;
+        border: none;
+        border-radius: 50%; /* Torna o botão circular */
+        width: 60px; /* Define o tamanho do botão */
+        height: 60px;
+        display: flex; /* Flexbox para centralização */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+        text-decoration: none; /* Remove o sublinhado do link */
+    }
+    
+    .btgit:hover {
+        background-color:#da3b62; /* Cor no hover */
+        transform: scale(1.05); /* Zoom no hover */
+    }
+    
+    .btgit a {
+        text-decoration: none; /* Remove sublinhado do link */
+        color: white; /* Deixa o ícone branco */
+        font-size: 1.5rem; /* Tamanho do ícone */
+    }
+    .btgit:active {
+        background-color: #ce0d3d;
+    }
